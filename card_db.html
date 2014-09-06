@@ -17,7 +17,8 @@
   "toughness": 1,
   "tags": {
    "mana-green": 1,
-   "mana-boost"
+   "mana-ramp",
+   "tapping"
   }
  },
  {
@@ -117,6 +118,7 @@
   "toughness": ,
   "tags": {
    "counter-gain",
+   "fight",
    "creature-removal"
   }
  },
@@ -180,7 +182,8 @@
   "tags": {
    "convoke",
    "enters-the-battlefield",
-   "counter-gain"
+   "counter-gain",
+   "target-creature"
   }
  },
   {
@@ -200,7 +203,9 @@
   "toughness": ,
   "tags": {
    "artifact-removal",
-   "enchantment-removal"
+   "enchantment-removal",
+   "target-artifact",
+   "target-enchantment"
   }
  },
   {
@@ -241,7 +246,8 @@
   "toughness": ,
   "tags": {
    "flying",
-   "creature-removal"
+   "creature-removal",
+   "target-creature"
   }
  },
   {
@@ -261,7 +267,8 @@
   "toughness": ,
   "tags": {
    "hexproof",
-   "buff"
+   "buff",
+   "target-creature"
   }
  },
   {
@@ -409,7 +416,7 @@
    "enchant-land",
    "enters-the-battlefield",
    "life-gain",
-   "mana-boost",
+   "mana-ramp",
    "land-tap"
   }
  },
@@ -431,9 +438,528 @@
   "power": ,
   "toughness": ,
   "tags": {
+   "target-creature",
    "enchant-creature",
    "buff",
    "graveyard-control"
+  }
+ },
+  {
+  "id": 16424,
+  "name": "Ancient Silverback",
+  "description": "{Green}: Regenerate Ancient Silverback. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "4GG",
+  "convertedManaCost": 6,
+  "type": "Creature",
+  "subType": [
+   "Ape"
+  ],
+  "power": 6,
+  "toughness": 5,
+  "tags": {
+   "regeneration"
+  }
+ },
+  {
+  "id": 208284,
+  "name": "Back to Nature",
+  "description": "Destroy all enchantments.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "1G",
+  "convertedManaCost": 2,
+  "type": "Instant",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+   "enchantment-removal"
+  }
+ },
+  {
+  "id": 383237,
+  "name": "Feral Incarnation",
+  "description": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for 1 or one mana of that creature's color.)
+  Put three 3/3 green Beast creature tokens onto the battlefield.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "8G",
+  "convertedManaCost": 9,
+  "type": "Sorcery",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+   "token-summoning": (3, Beast),
+   "convoke"
+  }
+ },
+  {
+  "id": 205060,
+  "name": "Garruk's Packleader",
+  "description": "Whenever another creature with power 3 or greater enters the battlefield under your control, you may draw a card.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "4G",
+  "convertedManaCost": 5,
+  "type": "Creature",
+  "subType": [
+   "Beast"
+  ],
+  "power": 4,
+  "toughness": 4,
+  "tags": {
+   "power": >=3,
+   "draw-card"
+  }
+ },
+  {
+  "id": 383329,
+  "name": "Nissa's Expedition",
+  "description": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for 1 or one mana of that creature's color.)
+  Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "4G",
+  "convertedManaCost": 5,
+  "type": "Sorcery",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+   "convoke",
+   "mana-ramp",
+  }
+ },
+  {
+  "id": 383335,
+  "name": "Overwhelm",
+  "description": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for 1 or one mana of that creature's color.)
+  Creatures you control get +3/+3 until end of turn.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "5GG",
+  "convertedManaCost": 7,
+  "type": "Sorcery",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+   "buff",
+   "convoke"
+  }
+ },
+  {
+  "id": 383336,
+  "name": "Paragon of Eternal Wilds",
+  "description": "Other green creatures you control get +1/+1.
+  Green, Tap: Another target green creature you control gains trample until end of turn. (If it would assign enough damage to its blockers to destroy them, you may have it assign the rest of its damage to defending player or planeswalker.)",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "3G",
+  "convertedManaCost": 4,
+  "type": "Creature",
+  "subType": [
+   "Human",
+   "Druid"
+  ],
+  "power": 2,
+  "toughness": 2,
+  "tags": {
+   "buff",
+   "target-creature",
+   "trample"
+  }
+ },
+  {
+  "id": 383359,
+  "name": "Reclamation Sage",
+  "description": "When Reclamation Sage enters the battlefield, you may destroy target artifact or enchantment.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "2G",
+  "convertedManaCost": 3,
+  "type": "Creature",
+  "subType": [
+   "Elf",
+   "Shaman"
+  ],
+  "power": 2,
+  "toughness": 1,
+  "tags": {
+   "enters-the-battlefield",
+   "artifact-removal",
+   "enchantment-removal"
+  }
+ },
+  {
+  "id": 383362,
+  "name": "Restock",
+  "description": "Return two target cards from your graveyard to your hand. Exile Restock.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "3GG",
+  "convertedManaCost": 5,
+  "type": "Sorcery",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+   "graveyard-control"
+  }
+ },
+  {
+  "id": 383364,
+  "name": "Roaring Primadox",
+  "description": "At the beginning of your upkeep, return a creature you control to its owner's hand.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "3G",
+  "convertedManaCost": 4,
+  "type": "Creature",
+  "subType": [
+   "Beast"
+  ],
+  "power": 4,
+  "toughness": 4,
+  "tags": {
+   "return-to-hand"
+  }
+ },
+  {
+  "id": 383406,
+  "name": "Sunblade Elf",
+  "description": "Sunblade Elf gets +1/+1 as long as you control a Plains.
+  {4}{White}: Creatures you control get +1/+1 until end of turn.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "G",
+  "convertedManaCost": 1,
+  "type": "Creature",
+  "subType": [
+   "Elf",
+   "Warrior"
+  ],
+  "power": 1,
+  "toughness": 1,
+  "tags": {
+   "buff",
+   "plains"
+  }
+ },
+  {
+  "id": 383426,
+  "name": "Venom Sliver",
+  "description": "Sliver creatures you control have deathtouch. (Any amount of damage a creature with deathtouch deals to a creature is enough to destroy it.)",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "1G",
+  "convertedManaCost": 2,
+  "type": "Creature",
+  "subType": [
+   "Sliver"
+  ],
+  "power": 1,
+  "toughness": 1,
+  "tags": {
+   "deathtouch"
+  }
+ },
+  {
+  "id": 383434,
+  "name": "Wall of Mulch",
+  "description": "Defender (This creature can't attack.)
+  {Green}, Sacrifice a Wall: Draw a card.",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "1G",
+  "convertedManaCost": 2,
+  "type": "Creature",
+  "subType": [
+   "Wall"
+  ],
+  "power": 0,
+  "toughness": 4,
+  "tags": {
+   "defender",
+   "card-draw",
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "",
+  "subType": [
+   ""
+  ],
+  "power": ,
+  "toughness": ,
+  "tags": {
   }
  },
 ]
