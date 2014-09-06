@@ -500,7 +500,7 @@
   "power": ,
   "toughness": ,
   "tags": {
-   "token-summoning": ["Beast Token",3],
+   "token-summoning": ["Beast Token", 3],
    "convoke"
   }
  },
