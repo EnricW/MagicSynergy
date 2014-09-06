@@ -500,7 +500,7 @@
   "power": ,
   "toughness": ,
   "tags": {
-   "token-summoning": [3, "Beast"],
+   "token-summoning": ["Beast Token",3],
    "convoke"
   }
  },
@@ -777,7 +777,7 @@
   "tags": {
    "defender",
    "dealt-damage",
-   "token-summoning"
+   "token-summoning": ["Insect Token", 0]
   }
  },
   {
@@ -801,7 +801,7 @@
    "flying",
    "deathtouch",
    "enters-the-battlefield",
-   "token-summoning": [4, "Insect"]
+   "token-summoning": ["Insect Token", 4]
   }
  },
   {
@@ -910,5 +910,43 @@
    "library",
    "enters-the-battlefield"
   }
- }
+ },
+  {
+  "id": ,
+  "name": "Beast Token",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "Creature",
+  "subType": [
+   "Beast"
+  ],
+  "power": 3,
+  "toughness": 3,
+  "tags": {
+  }
+ },
+  {
+  "id": ,
+  "name": "Insect Token",
+  "description": "",
+  "colors": [
+   "green"
+  ],
+  "manaCost": "",
+  "convertedManaCost": ,
+  "type": "Creature",
+  "subType": [
+   "Insect"
+  ],
+  "power": 1,
+  "toughness": 1,
+  "tags": {
+    "flying",
+    "deathtouch"
+  }
+ },
 ]
