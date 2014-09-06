@@ -4,15 +4,21 @@ Sinergies actuals:
 - "subtype" (Elf, Plant, etc...): Creature's of the same type get... / Other Elf creatures get...
 - "tags":
   - "enters-the-battlefield" / "return-to-hand".
-  - "graveyard-control".
+  - "graveyard-control" / "when-it-dies"
+  - "token-summoning" / "convoke"
 
 
 - El tag "buff" necessitaria més treball, com afegir els +-X/+-X.
 - El tag "unblockable" i "trample" es podrien associar a un tag "combat-damage-to-player" en el futur.
-- El tag "mana-boost" associa totes les cartes q proporcionen mana o fan buscar lands a la biblioteca. L'Elvish Mystic per tant a de tenir aquest tag.
+- El tag "mana-ramp" associa totes les cartes q proporcionen mana o fan buscar lands a la biblioteca. L'Elvish Mystic per tant a de tenir aquest tag.
 - Me inventat un tag de nom "mana-curve" que s'associa a les criatures que tenen X/X on X és igual o superior al "convertedManaCost". Crec que és prescindible però podria ser útil en el futur.
-- El tag "return-to-hand" necessitaria més treball pq ens trobarem que no sempre és per a una criatura i no sempre per a una que tu controles. S'haurà d'afegir al tag el "type" de lo q pot retornar a la mà i l'owner (per si és opponent). 
+- El tag "library" va relacionat amb el "Search in your library" i tot lo q fagi que vagis treient cartes d'ella.
+- El tag "return-to-hand"/"enters-the-battlefield" necessitaria més treball pq ens trobarem que no sempre és per a una criatura i no sempre per a una que tu controles. S'haurà d'afegir al tag el "type" de lo q pot retornar a la mà i l'owner (ha d'haver 3 opcions: la teva, la d'un oponent o de qualsevol.). 
+- El mateix passa amb el "target-creature", l'owner és una condició important.
 - El tag "creature-removal" hauria d'especificar els tipus, colors, etc... Exemple actual, el Plummet només pot destruir criatures amb flying.
+- El tag "token-summoning": ( Beast, 3 ) està pensat per cartes que fan entrar tokens al camp de batalla. Hem de crear una mini base de dades amb els tokens, que de moment són 2, amb les seves habilitats i cos. [Bestia, 3(força), 3(resistencia), 0(cap habilitat)], [Insect, 1, 1, [deathtouch, flying]].  Al exemple seria "posa'm 3 besties, i esperet q miri la X/X d'una bestia per si el "enters-the-battlefield" fa trigger" (com el cas del Garruk's Packleader).
+- El cas del Garruk's Packleader: "Whenever another creature with power 3 or greater enters the battlefield under your control, you may draw a card.". S'hauria de fer un tag del pal funció "power-friendly" que miri que tota criatura de power igual o superior a 3 tingui sinergia.
+
 
 
 

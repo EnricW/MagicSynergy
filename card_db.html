@@ -308,7 +308,8 @@
   "tags": {
    "enters-the-battlefield",
    "mana-ramp",
-   "graveyard-control"
+   "graveyard-control",
+   "library"
   }
  },
   {
@@ -542,6 +543,7 @@
   "tags": {
    "convoke",
    "mana-ramp",
+   "library"
   }
  },
   {
@@ -686,7 +688,7 @@
   "power": 1,
   "toughness": 1,
   "tags": {
-   "deathtouch"
+   "deathtouch",
   }
  },
   {
@@ -711,165 +713,202 @@
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 89064,
+  "name": "Chord of Calling",
+  "description": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for 1 or one mana of that creature's color.)
+  Search your library for a creature card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "XGGG",
+  "convertedManaCost": 3,
+  "type": "Instant",
   "subType": [
    ""
   ],
   "power": ,
   "toughness": ,
   "tags": {
+   "convoke",
+   "library",
+   "enters-the-battlefield"
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 383255,
+  "name": "Genesis Hydra",
+  "description": "When you cast Genesis Hydra, reveal the top X cards of your library. You may put a nonland permanent card with converted mana cost X or less from among them onto the battlefield. Then shuffle the rest into your library.
+  Genesis Hydra enters the battlefield with X +1/+1 counters on it.",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "XGG",
+  "convertedManaCost": 2,
+  "type": "Creature",
   "subType": [
-   ""
+   "Plant",
+   "Hydra"
   ],
-  "power": ,
-  "toughness": ,
+  "power": 0,
+  "toughness": 0,
   "tags": {
+   "counter-gain",
+   "library",
+   "enters-the-battlefield",
+   "return-to-hand"
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 383267,
+  "name": "Hornet Nest",
+  "description": "Defender (This creature can't attack.)
+  Whenever Hornet Nest is dealt damage, put that many 1/1 green Insect creature tokens with flying and deathtouch onto the battlefield. (Any amount of damage a creature with deathtouch deals to a creature is enough to destroy it.)",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "2G",
+  "convertedManaCost": 3,
+  "type": "Creature",
   "subType": [
-   ""
+   "Insect"
   ],
-  "power": ,
-  "toughness": ,
+  "power": 0,
+  "toughness": 2,
   "tags": {
+   "defender",
+   "dealt-damage",
+   "token-summoning"
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 383268,
+  "name": "Hornet Queen",
+  "description": "Flying
+  Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)
+  When Hornet Queen enters the battlefield, put four 1/1 green Insect creature tokens with flying and deathtouch onto the battlefield.",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "4GGG",
+  "convertedManaCost": 7,
+  "type": "Creature",
   "subType": [
-   ""
+   "Insect"
   ],
-  "power": ,
-  "toughness": ,
+  "power": 2,
+  "toughness": 2,
   "tags": {
+   "flying",
+   "deathtouch",
+   "enters-the-battlefield",
+   "token-summoning": (4, Insect)
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 383290,
+  "name": "Kalonian Twingrove",
+  "description": "Kalonian Twingrove's power and toughness are each equal to the number of Forests you control.
+  When Kalonian Twingrove enters the battlefield, put a green Treefolk Warrior creature token onto the battlefield with "This creature's power and toughness are each equal to the number of Forests you control."",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "5G",
+  "convertedManaCost": 6,
+  "type": "Creature",
   "subType": [
-   ""
+   "Treefolk",
+   "Warrior"
   ],
-  "power": ,
-  "toughness": ,
+  "power": *,
+  "toughness": *,
   "tags": {
+   "forests",
+   "enters-the-battlefield",
+   "token-summoning",
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 383298,
+  "name": "Life's Legacy",
+  "description": "As an additional cost to cast Life's Legacy, sacrifice a creature.
+  Draw cards equal to the sacrificed creature's power.",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "1G",
+  "convertedManaCost": 2,
+  "type": "Sorcery",
   "subType": [
    ""
   ],
   "power": ,
   "toughness": ,
   "tags": {
+   "card-draw",
+   "when-it-dies",
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 383344,
+  "name": "Phytotitan",
+  "description": "When Phytotitan dies, return it to the battlefield tapped under its owner's control at the beginning of his or her next upkeep.",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "4GG",
+  "convertedManaCost": 6,
+  "type": "Creature",
   "subType": [
-   ""
+   "Plant",
+   "Elemental"
   ],
-  "power": ,
-  "toughness": ,
+  "power": 7,
+  "toughness": 2,
   "tags": {
+   "when-it-dies",
+   "enters-the-battlefield"
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 186321,
+  "name": "Terra Stomper",
+  "description": "Terra Stomper can't be countered.
+  Trample",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "3GGG",
+  "convertedManaCost": 6,
+  "type": "Creature",
   "subType": [
-   ""
+   "Beast"
   ],
-  "power": ,
-  "toughness": ,
+  "power": 8,
+  "toughness": 8,
   "tags": {
+   "trample",
+   "enters-the-battlefield"
   }
  },
   {
-  "id": ,
-  "name": "",
-  "description": "",
+  "id": 383442,
+  "name": "Yisan, the Wanderer Bard",
+  "description": "{2}{Green}, {Tap}, {Put a verse counter on Yisan, the Wanderer Bard}: Search your library for a creature card with converted mana cost equal to the number of verse counters on Yisan, put it onto the battlefield, then shuffle your library.",
   "colors": [
    "green"
   ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
+  "manaCost": "2G",
+  "convertedManaCost": 3,
+  "type": "Creature",
   "subType": [
-   ""
+   "Human",
+   "Rogue"
   ],
-  "power": ,
-  "toughness": ,
+  "power": 2,
+  "toughness": 3,
   "tags": {
+   "library",
+   "enters-the-battlefield"
   }
  },
   {
