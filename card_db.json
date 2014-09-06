@@ -500,7 +500,7 @@
   "power": ,
   "toughness": ,
   "tags": {
-   "token-summoning": (3, Beast),
+   "token-summoning": [3, "Beast"],
    "convoke"
   }
  },
@@ -520,7 +520,7 @@
   "power": 4,
   "toughness": 4,
   "tags": {
-   "power": >=3,
+   "power-condition": 3,
    "draw-card"
   }
  },
@@ -688,7 +688,7 @@
   "power": 1,
   "toughness": 1,
   "tags": {
-   "deathtouch",
+   "deathtouch"
   }
  },
   {
@@ -709,7 +709,7 @@
   "toughness": 4,
   "tags": {
    "defender",
-   "card-draw",
+   "card-draw"
   }
  },
   {
@@ -801,7 +801,7 @@
    "flying",
    "deathtouch",
    "enters-the-battlefield",
-   "token-summoning": (4, Insect)
+   "token-summoning": [4, "Insect"]
   }
  },
   {
@@ -819,12 +819,12 @@
    "Treefolk",
    "Warrior"
   ],
-  "power": *,
-  "toughness": *,
+  "power": 0,
+  "toughness": 0,
   "tags": {
    "forests",
    "enters-the-battlefield",
-   "token-summoning",
+   "token-summoning"
   }
  },
   {
@@ -845,7 +845,7 @@
   "toughness": ,
   "tags": {
    "card-draw",
-   "when-it-dies",
+   "when-it-dies"
   }
  },
   {
@@ -910,95 +910,5 @@
    "library",
    "enters-the-battlefield"
   }
- },
-  {
-  "id": ,
-  "name": "",
-  "description": "",
-  "colors": [
-   "green"
-  ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
-  "subType": [
-   ""
-  ],
-  "power": ,
-  "toughness": ,
-  "tags": {
-  }
- },
-  {
-  "id": ,
-  "name": "",
-  "description": "",
-  "colors": [
-   "green"
-  ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
-  "subType": [
-   ""
-  ],
-  "power": ,
-  "toughness": ,
-  "tags": {
-  }
- },
-  {
-  "id": ,
-  "name": "",
-  "description": "",
-  "colors": [
-   "green"
-  ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
-  "subType": [
-   ""
-  ],
-  "power": ,
-  "toughness": ,
-  "tags": {
-  }
- },
-  {
-  "id": ,
-  "name": "",
-  "description": "",
-  "colors": [
-   "green"
-  ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
-  "subType": [
-   ""
-  ],
-  "power": ,
-  "toughness": ,
-  "tags": {
-  }
- },
-  {
-  "id": ,
-  "name": "",
-  "description": "",
-  "colors": [
-   "green"
-  ],
-  "manaCost": "",
-  "convertedManaCost": ,
-  "type": "",
-  "subType": [
-   ""
-  ],
-  "power": ,
-  "toughness": ,
-  "tags": {
-  }
- },
+ }
 ]
